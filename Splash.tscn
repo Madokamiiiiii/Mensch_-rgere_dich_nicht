@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://images/splash.jpg" type="Texture" id=1]
+[ext_resource path="res://Splash.gd" type="Script" id=2]
+[ext_resource path="res://images/ärgerdichnicht.jpg" type="Texture" id=3]
+[ext_resource path="res://fonts/HirukoBlackAlternate.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 250
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://fonts/HirukoBlackAlternate.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 128
+font_data = SubResource( 2 )
+
+[node name="Background" type="TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -470.0
+margin_top = -365.0
+margin_right = 470.0
+margin_bottom = 365.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -417.0
+margin_bottom = -160.0
+
+[node name="Button" type="Button" parent="CenterContainer"]
+margin_left = 523.0
+margin_right = 1101.0
+margin_bottom = 257.0
+custom_fonts/font = SubResource( 1 )
+text = "Start"
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 185.0
+margin_bottom = 444.0
+custom_fonts/font = SubResource( 3 )
+text = "Mensch ärgere dich nicht!
+DAS SPIEL"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="CenterContainer/Button" to="." method="_on_Button_pressed"]

@@ -1,0 +1,277 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Spielstein.tscn" type="PackedScene" id=2]
+[ext_resource path="res://images/board.png" type="Texture" id=3]
+[ext_resource path="res://Dice.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Feld.tscn" type="PackedScene" id=5]
+[ext_resource path="res://defaultFontblack.tres" type="DynamicFont" id=6]
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+Spieler = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 83.0
+margin_top = 15.0
+margin_right = 1073.0
+margin_bottom = 1001.0
+rect_pivot_offset = Vector2( 768.04, 81.8721 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 5
+
+[node name="Dice" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1356.68, 506.499 )
+
+[node name="Feld1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 621.768, 55.4925 )
+
+[node name="BaseGreen1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 841.072, 103.052 )
+
+[node name="BaseGreen2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 952.925, 103.933 )
+
+[node name="BaseGreen3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 828.741, 211.383 )
+
+[node name="BaseGreen4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 942.356, 211.383 )
+
+[node name="BaseGelb1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 159.381, 127.713 )
+
+[node name="BaseGelb2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 282.684, 134.759 )
+
+[node name="BaseGelb3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 175.234, 236.924 )
+
+[node name="BaseGelb4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 295.895, 237.805 )
+
+[node name="BaseBlau1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 192.849, 828.78 )
+
+[node name="BaseBlau2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 303.822, 837.587 )
+
+[node name="BaseBlau3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 193.729, 942.395 )
+
+[node name="BaseBlau4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 310.868, 945.037 )
+
+[node name="BaseRot1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 844.595, 745.11 )
+
+[node name="BaseRot2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 941.476, 745.11 )
+
+[node name="BaseRot3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 846.356, 869.294 )
+
+[node name="BaseRot4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 951.164, 872.817 )
+
+[node name="Feld2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 624.29, 161.433 )
+
+[node name="Feld3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 628.074, 257.283 )
+
+[node name="Feld4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 612.94, 339.261 )
+
+[node name="Feld5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 619.246, 425.022 )
+
+[node name="Feld6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 699.962, 418.716 )
+
+[node name="Feld7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 788.245, 416.194 )
+
+[node name="Feld8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 887.88, 414.932 )
+
+[node name="Feld9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 979.947, 419.977 )
+
+[node name="Feld10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 988.775, 513.305 )
+
+[node name="Feld11" parent="." instance=ExtResource( 5 )]
+position = Vector2( 982.469, 581.41 )
+
+[node name="Feld12" parent="." instance=ExtResource( 5 )]
+position = Vector2( 889.711, 583.482 )
+
+[node name="Feld13" parent="." instance=ExtResource( 5 )]
+position = Vector2( 788.245, 587.716 )
+
+[node name="Feld14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 706.268, 587.716 )
+
+[node name="Feld15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 620.507, 588.977 )
+
+[node name="Feld16" parent="." instance=ExtResource( 5 )]
+position = Vector2( 621.768, 674.738 )
+
+[node name="Feld17" parent="." instance=ExtResource( 5 )]
+position = Vector2( 621.768, 764.283 )
+
+[node name="Feld18" parent="." instance=ExtResource( 5 )]
+position = Vector2( 619.245, 860.134 )
+
+[node name="Feld19" parent="." instance=ExtResource( 5 )]
+position = Vector2( 621.768, 953.462 )
+
+[node name="Feld20" parent="." instance=ExtResource( 5 )]
+position = Vector2( 544.835, 961.029 )
+
+[node name="Feld21" parent="." instance=ExtResource( 5 )]
+position = Vector2( 464.119, 961.029 )
+
+[node name="Feld22" parent="." instance=ExtResource( 5 )]
+position = Vector2( 466.641, 865.178 )
+
+[node name="Feld23" parent="." instance=ExtResource( 5 )]
+position = Vector2( 461.596, 761.76 )
+
+[node name="Feld24" parent="." instance=ExtResource( 5 )]
+position = Vector2( 465.38, 674.738 )
+
+[node name="Feld25" parent="." instance=ExtResource( 5 )]
+position = Vector2( 466.641, 585.194 )
+
+[node name="Feld26" parent="." instance=ExtResource( 5 )]
+position = Vector2( 396.014, 590.238 )
+
+[node name="Feld27" parent="." instance=ExtResource( 5 )]
+position = Vector2( 324.126, 586.455 )
+
+[node name="Feld28" parent="." instance=ExtResource( 5 )]
+position = Vector2( 230.798, 594.022 )
+
+[node name="Feld29" parent="." instance=ExtResource( 5 )]
+position = Vector2( 126.119, 595.283 )
+
+[node name="Feld30" parent="." instance=ExtResource( 5 )]
+position = Vector2( 123.597, 507 )
+
+[node name="Feld31" parent="." instance=ExtResource( 5 )]
+position = Vector2( 123.597, 417.455 )
+
+[node name="Feld32" parent="." instance=ExtResource( 5 )]
+position = Vector2( 220.709, 426.283 )
+
+[node name="Feld33" parent="." instance=ExtResource( 5 )]
+position = Vector2( 324.126, 421.239 )
+
+[node name="Feld34" parent="." instance=ExtResource( 5 )]
+position = Vector2( 393.492, 431.328 )
+
+[node name="Feld35" parent="." instance=ExtResource( 5 )]
+position = Vector2( 469.164, 421.239 )
+
+[node name="Feld36" parent="." instance=ExtResource( 5 )]
+position = Vector2( 464.119, 334.216 )
+
+[node name="Feld37" parent="." instance=ExtResource( 5 )]
+position = Vector2( 469.164, 257.283 )
+
+[node name="Feld38" parent="." instance=ExtResource( 5 )]
+position = Vector2( 470.425, 155.127 )
+
+[node name="Feld39" parent="." instance=ExtResource( 5 )]
+position = Vector2( 472.947, 55.4926 )
+
+[node name="Feld40" parent="." instance=ExtResource( 5 )]
+position = Vector2( 551.141, 55.4926 )
+
+[node name="greenziel1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 543.574, 153.866 )
+
+[node name="gelbziel1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 225.753, 505.738 )
+
+[node name="gelbziel2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 325.388, 509.522 )
+
+[node name="gelbziel3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 388.447, 504.477 )
+
+[node name="gelbziel4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 469.164, 505.738 )
+
+[node name="rotziel1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 885.357, 504.477 )
+
+[node name="rotziel2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 789.507, 503.216 )
+
+[node name="rotziel3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 708.79, 507 )
+
+[node name="rotziel4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 626.813, 509.522 )
+
+[node name="blauziel1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 529.224, 865.721 )
+
+[node name="blauziel2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 542.886, 765.204 )
+
+[node name="blauziel3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 549.718, 664.688 )
+
+[node name="blauziel4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 547.766, 587.593 )
+
+[node name="greenziel2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 543.574, 249.716 )
+
+[node name="greenziel3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 543.574, 336.739 )
+
+[node name="greenziel4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 552.402, 414.933 )
+
+[node name="amZug" type="Label" parent="."]
+margin_left = 1042.38
+margin_top = 121.495
+margin_right = 1609.38
+margin_bottom = 252.495
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Spieler %s
+ am Zug"
+align = 1
+
+[node name="gewürfelt" type="Label" parent="."]
+margin_left = 1053.11
+margin_top = 662.137
+margin_right = 1620.11
+margin_bottom = 793.137
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+
+[node name="infoBox" type="Label" parent="."]
+margin_left = 989.0
+margin_top = 860.0
+margin_right = 1610.0
+margin_bottom = 991.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 0.0901961, 0.0901961, 1 )
+text = "Infobox"
+align = 1
+clip_text = true
+[connection signal="rolled" from="Dice" to="." method="_on_Dice_rolled"]
